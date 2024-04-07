@@ -13,7 +13,6 @@ function Scene(){
   this.init = function(){
     // SET
     scene = new THREE.Scene();
-	scene.background = new THREE.Color(0xffff00);
     W = window.innerWidth
     H = window.innerHeight
     
