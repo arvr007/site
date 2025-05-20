@@ -1,18 +1,252 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>CodePen - Three.js Cubes</title>
-  <link rel="stylesheet" href="./style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVRL Proposed Projects</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: auto;
+        }
+        
+        #container {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
 
+        .content {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(300px, 2fr)); 
+			grid-gap: 20px;
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+
+        .project {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+
+        .project img {
+            width: 400px;
+            height: auto;
+			max-width: 100%; /* Ensure the image fits within the container */
+            max-height: 100%; /* Ensure the image fits within the container */
+            object-fit: contain;
+			justify-content: center;
+            align-items: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+			border: 1px solid #ccc; 
+        }
+
+        .project .info {
+            padding: 20px;
+        }
+
+        .project h3 {
+            margin-top: 0;
+        }
+
+        .project p {
+            margin-bottom: 14px;
+        }
+
+    </style>
 </head>
 <body>
-<!-- Test 1  -->
-<body>
-  <div class='scene'></div>
-</body>
-<!-- partial   -->
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/r61/three.min.js'></script><script  src="./script.js"></script>
+	<header style="background-color: #333; color: #fff; padding: 20px; text-align: center;">
+        <h1 style="font-size: 40px; margin: 0;">AVR lab Proposed Projects</h1>
+        <p style="font-size: 24px; margin: 10px 0;">A place where you can find amazing projects</p>
+		<p style="font-size: 14px; margin: 10px 0;">Boaz Sternfeld : boazs@cs.technion.ac.il</p>
+		<p style="font-size: 14px; margin: 10px 0;">Yaron Honen : yaronh@cs.technion.ac.il</p>
+	
+    </header>
+    <div id="container"></div>
+    <div class="content">
+		<div class="project">
+            <img src="images/maze_escape_room.jpg" alt="Project 1">
+            <div class="info">
+                <h3>MR - Precise Alignment and Placement of a 3D Model onto a Real-World Surface in Virtual Reality </h3>
+                <p> This project focuses on the registration and alignment of a 3D virtual model onto a physical surface using Mixed Reality (MR) technology. The user selects four points on a real-world plane, and the system computes the optimal transformation—comprising rotation and translation—to accurately position the virtual model onto the corresponding physical surface</p>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/tube_balling_project.jpg" alt="Project 0">
+            <div class="info">
+                <h3>VR - Pipe Runner: A Precision Ball Navigation Game </h3>
+                <p>The goal of this project is to design and create an interactive 3D environment centered around a main pipe with multiple branches. The objective of the game is to guide a ball through the pipe without touching the walls.
 
+The ball's movement is controlled using two sliders (or controllers): one for motion along the X-axis and the other for motion along the Y-axis, giving the player full control over the direction and position of the ball inside the pipe. </p>
+			<p><b>Bonus Feature:</b></p>
+			<p>An extended version of the game allows two players to play simultaneously, competing to navigate through the pipe while avoiding collisions.:</p>
+            </div>
+        </div>
+
+		<div class="project">
+            <img src="images/Snakes_and_ladders.jpg" alt="Project 2">
+            <div class="info">
+                <h3>VR - Snakes and Ladders: The Next Generation </h3>
+                <p> Design and develop an innovative version of the classic game Snakes and Ladders, set in a surreal world with unrealistic physics. Instead of a traditional board, the game will take place in a dynamic, interactive environment where the laws of physics are altered—for example, gravity may be reversed, objects may float unpredictably, or movement may be influenced by unique forces.</p>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/VR - Artistic sculpturing.jpg" alt="Project 1">
+            <div class="info">
+                <h3>VR - Artistic sculpturing</h3>
+                <p>Artistic sculpturing, use a haptic glove to extended the physical modeling of contact surfaces, object hardness, surface deformation, 3D modeling etc. Links:<br>
+				<a href="https://youtu.be/NckMmeZTCDc"> Link 1 </a><br>
+				<a href="https://youtu.be/zXJtxSpFdro"> Link 2 </a><br>
+				<a href="https://youtu.be/Pf8sKAuzR0k"> Link 3 </a> <br>
+				Extra : <br>
+				Applying neat geometric/morphologic operation, coloring</p>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/Facebook social net.jpg" alt="Project 2">
+            <div class="info">
+                <h3> Facebook Social Networks 3D Visualization </h3>
+                <p> Create an immersive and interactive 3D visualization of Facebook social networks and friends, providing users with a unique way to explore and interact with their online connections and shared content.<br>
+				Offer a visually stunning and intuitive interface for users to navigate their digital social circles.
+				</p>
+            </div>
+        </div>     
+		<div class="project">
+            <img src="images/MR - Break the wall.jpg" alt="Project 3">
+            <div class="info">
+                <h3>MR - Break the wall</h3>
+                <p>Mixed reality – Break the wall by Kicking/throwing a ball</p>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/AR-VR curves surfaces.jpg" alt="Project 4">
+            <div class="info">
+                <h3>AR/VR curves & surfaces</h3>
+                <p>Build function curves and surfaces visualization in VR and AR <br>
+					References: <br>
+					<a href="https://youtu.be/Tpp0cTwaeLw"> Link 1 </a> <br>
+					<a href="https://xr-graph.vercel.app/?function=f(u,v)%3D[u,v,u*v*0.1]"> Link 2 </a> <br>
+				</p>
+            </div>
+        </div>
+
+		<div class="project">
+            <img src="images/Architecture - Beam up Revit to reality.jpg" alt="Project 5">
+            <div class="info">
+                <h3>Architecture - Beam up Revit to reality</h3>
+                <p>Import Revit* model and experience it instantly with your team, in AR or VR, from anywhere in the world.
+				*Revit is the industry standard for BIM editing. It is widely used in architecture, commercial interior design, building design, and virtual design and construction.
+				</p>
+				<a href="https://www.parallax.am/en/trainings/revit-architecture"> Revit </a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="images/HR-Hologram.jpg" alt="Project 6">
+            <div class="info">
+                <h3>HR-Hologram</h3>
+                <p>Build a hologram device, The students decide which shape to build a box hologram or a cone one.
+				</p>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/VR Samurai.jpg" alt="Project 7">
+            <div class="info">
+                <h3>VR Samurai</h3>
+                <p>The Samurai Game (inspired by Ninja Fruit) The students will develop a game from the concept level with an emphasis on the characteristics of the virtual world. Emphasis should be placed on movement, color, instruments, and sound.
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/AR Cubism.jpg" alt="Project 8">
+            <div class="info">
+                <h3>AR Cubism</h3>
+                <p>An AR polyomino-based puzzle.
+				</p>
+				<a href="https://puzzler.sourceforge.net/">polyomino puzzel</a><br>
+				<a href="https://louridas.github.io/rwa/assignments/polyominoes/">polyomino background</a><br>
+				Solvers: <br>
+				<a href="https://github.com/dmarchuk/polyomino-puzzle-solver">1. polyomino-puzzle-solver (JavaScript)</a><br>
+				<a href="https://pypi.org/project/polyomino/">2.polyomino 0.7.1r (python)</a><br \>
+
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/VR - SHOOTING.jpg" alt="Project 9">
+            <div class="info">
+                <h3>VR - SHOOTING</h3>
+                <p>Build a game and suggest visual and audio effects (Matrix)in the spirit of :</p> <br>
+				<a href="https://superhotgame.com/">SPERHOT </a><br>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/VR & IOT.jpg" alt="Project 10">
+            <div class="info">
+                <h3>VR & IOT</h3>
+                <p>Given our Maze (One of the faculty escape room tasks) UNITY base application running on Oculus Quest 2, enhances the maze interaction and visualization, and upon maze, successful compilation sends a message via blockage (Bluetooth or WIFI) to a device (Arduino or android) that will move a gate. (hinge)
+				</p> <br>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/sea_n_mesh.jpg" alt="Project 12">
+            <div class="info">
+                <h3>Rendering water using innovative tools </h3>
+                <p>Rendering a realistic image from a description of the 3D physical world is a challenging task. The proposed project suggests to render a water surface using the innovative Mitsuba3 tools <a href="https://www.mitsuba-renderer.org/">Mitsuba 3</a>.<br>This tool was developed in EPFL and is based on the new concept of differential rendering, which create a sequence of operations represented in a network resembling those used in deep learning. One advantage of this tool is that it enables also to reconstruct the 3D shape back from the rendered image. The 3D waves shape will be provided. 
+				</p> <br>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/vr_streamin.jpg" alt="Project 13">
+            <div class="info">
+                <h3>VR streaming Plugin </h3>
+                <p>Build a platform to stream 3D content from any application to VR glasses. Communication is two-way.</p>				</p> <br>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/raycasting_project.gif" alt="Project 14">
+            <div class="info">
+                <h3>High-Performance Raycasting with GPU </h3>
+                <p>Given a location in space, send rays in 360 degrees (from the center of a sphere in all directions) and check which rays hit models in the scene and at what distance. <br>
+					Then, repeat the process as the point moves along a track. <br> <br>
+					<b>With Prof. Fisher-Gewirtzman and Dr. Guy Austern, </b> <br>
+					<b>Faculty of Architecture.</b>
+
+				</p>				</p> <br>
+            </div>
+        </div>
+		<div class="project">
+            <img src="images/presentaion_trainer.jpg" alt="Project 15">
+            <div class="info">
+                <h3>Empowering Educators with Advanced Presentation Training </h3>
+                <p>An innovative training system tailored for lecturers aiming to refine their presentation techniques.
+				</p><br>
+				<p>This comprehensive platform supports educators in mastering the art of public speaking, ensuring they can deliver engaging and memorable lectures that resonate with their audience.</p>
+				
+            </div>
+		</div>
+		<div class="project">
+            <img src="images/vr_triangle_chess_game.jpg" alt="Project 16">
+            <div class="info">
+                <h3>Chain Triangle Chess Game </h3>
+                <p>Design and develop a Chain Triangle Chess game, implemented as an immersive VR experience or an interactive web application.
+				</p>
+				<p>The project explores innovative gameplay mechanics, user interaction, and modern UI design.</p>
+				<br>
+				<a href="https://youtu.be/av4lao5yiuY" target="_blank">Watch this video on YouTube</a>
+            </div>
+		</div>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/100/three.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.5/dat.gui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.2/randomColor.min.js'></script>
+<script src='https://klevron.github.io/codepen/three.js/OrbitControls.js'></script>
+<script  src="./cubes_rotate_script.js"></script>
 </body>
 </html>
